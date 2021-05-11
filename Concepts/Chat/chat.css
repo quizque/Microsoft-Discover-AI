@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 125px;
+    background-color: #f7f7f7;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header > img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2px 0px 2px 5px;
+
+    vertical-align: middle;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+#text-bar {
+    border-radius: 50px;
+    border: solid gray;
+    padding: 2.5px;
+    padding-left: 20px;
+
+    display: flex;
+}
+
+#text-message-button {
+    display: block;
+    height: auto;
+    width: 45px;
+    border-radius: 50%;
+    margin: 1px;
+    background-color: #36c85b;
+    color: white;
+    border-style: none;
+
+    font-size: 30px;
+}
+
+#text-message {
+    width: 100%;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.message-left,
+.message-right {
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.message-left {
+    background-color: #e9e8eb;
+}
+
+.message-right {
+    background-color: #198cfe;
+    float: right;
+    margin-left: auto;
+    word-wrap: break-word;
+    color: white;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .message-left,
+    .message-right {
+        flex-direction: row;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        width: 40%;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .message-right {
+        background-color: #198cfe;
+        float: right;
+        margin-left: auto;
+        word-wrap: break-word;
+    }
+
+    #text-message {
+        width: 100%;
+        border-style: none;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    #text-bar {
+        border-radius: 50px;
+        border: solid gray;
+        padding: 2.5px;
+        padding-left: 20px;
+
+        display: flex;
+    }
+
+    #text-message-button {
+        display: block;
+        height: auto;
+        width: 22.5px;
+        border-radius: 50%;
+        margin: 1px;
+        background-color: #36c85b;
+        color: white;
+        border-style: none;
+
+        font-size: 15px;
+    }
+}
