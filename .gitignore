@@ -105,3 +105,11 @@ dist
 
 # Visual Studio Code
 *.code-workspace
+
+node_modules
+.cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
