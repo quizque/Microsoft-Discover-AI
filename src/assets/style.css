@@ -1,0 +1,156 @@
+/*
+WARNING WARNING WARNING WARNING WARNING
+This file is full of very terrible things. 
+Please don't open unless necessary.
+Thank you.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0 1rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h3,
+a,
+div {
+    font-family: "Avenir Next", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #002237;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #009fff;
+    transition: 0.3s;
+}
+
+/*
+    ************* BEGIN NAVIGATOR CSS *************
+*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -2px;
+}
+
+/* 
+    Navigator Logo
+*/
+
+.nav-logo > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 1rem 0 0;
+}
+
+/* 
+    Navigator Covid Tracker
+*/
+
+.nav-covid-tracker {
+    display: flex;
+    font-weight: 300;
+    margin: 0 1.1rem;
+    font-size: 1.1rem;
+}
+
+.nav-covid-tracker > a {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0 0.25rem;
+}
+
+.nav-covid-tracker > span {
+    margin: 0 0.3rem;
+}
+
+.nav-covid-tracker > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.25rem;
+
+    filter: invert(47%) sepia(93%) saturate(3177%) hue-rotate(76deg)
+        brightness(94%) contrast(101%);
+}
+
+.nav-covid-tracker > div {
+    font-weight: 300;
+    font-size: 1.1rem;
+    filter: invert(47%) sepia(93%) saturate(3177%) hue-rotate(76deg)
+        brightness(94%) contrast(101%);
+}
+
+/* 
+    Navigator Links
+*/
+
+.nav-links > * {
+    margin: 0 3rem 0 0;
+}
+
+/*
+    ************* END NAVIGATOR CSS *************
+*/
+
+.id-card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.id-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 4rem 1.5rem;
+}
+
+.id-card > img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.id-card > h1 {
+    font-weight: 300;
+    margin: 1rem 1.1rem 0rem 1rem;
+    font-size: 2rem;
+}
+
+.id-card > h3 {
+    margin: 0.45rem 0 0.45rem 0;
+}
+
+.id-card > p {
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.center-temp {
+    margin: auto;
+    text-align: center;
+}
