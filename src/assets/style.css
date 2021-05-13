@@ -154,3 +154,16 @@ nav {
     margin: auto;
     text-align: center;
 }
+
+.chat-app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-app {
+    width: 350px;
+    height: 500px;
+    justify-content: center;
+    display: block;
+    margin: 2rem auto;
+}

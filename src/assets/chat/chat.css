@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 110px 0px 60px 0;
+}
+
+header {
+    height: 110px;
+    background-color: #f7f7f7;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 100%;
+    top: 0%;
+    width: 100%;
+    opacity: 1;
+    margin: 0;
+}
+
+header > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px 0px 2px 5px;
+
+    vertical-align: middle;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+#text-box {
+    background-color: white;
+    height: 50px;
+
+    margin: 0;
+}
+
+#text-bar {
+    border-radius: 50px;
+    border: solid gray;
+    background-color: white;
+    padding: 2.5px;
+    padding-left: 20px;
+
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0.5%;
+    margin: 0;
+}
+
+#text-message-button {
+    display: block;
+    height: auto;
+    width: 45px;
+    border-radius: 50%;
+    margin: 1px;
+    background-color: #36c85b;
+    color: white;
+    border-style: none;
+
+    font-size: 30px;
+}
+
+#text-message {
+    width: 100%;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.message-left,
+.message-right {
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.message-left {
+    background-color: #e9e8eb;
+}
+
+.message-right {
+    background-color: #198cfe;
+    float: right;
+    margin-left: auto;
+    word-wrap: break-word;
+    color: white;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .message-left,
+    .message-right {
+        flex-direction: row;
+        margin: 10px auto 0 10px;
+        padding: 7.5px;
+        border-radius: 10px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        max-width: 70%;
+    }
+
+    .message-right {
+        background-color: #198cfe;
+        word-wrap: break-word;
+        margin: 10px 10px 0px auto;
+    }
+
+    #text-message {
+        width: 100%;
+        border-style: none;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+    #text-bar {
+        border-radius: 50px;
+        border: solid gray;
+        padding: 2.5px;
+        padding-left: 20px;
+
+        display: flex;
+    }
+
+    #text-message-button {
+        display: block;
+        height: auto;
+        width: 22.5px;
+        border-radius: 50%;
+        margin: 1px 1px 0px 1px;
+        padding-bottom: 5px;
+        background-color: #36c85b;
+        color: white;
+        border-style: none;
+        width: 35px;
+        height: 35px;
+
+        font-size: 30px;
+    }
+}
