@@ -16,6 +16,7 @@ const Header = () => {
             </Link>
             <NavBarCovidTracker />
             <nav className="nav-links">
+                <Link to="/">Home</Link>
                 <Link to="/app">App</Link>
                 <Link to="/about">Help</Link>
                 <Link to="/meet-team">Meet the Team</Link>

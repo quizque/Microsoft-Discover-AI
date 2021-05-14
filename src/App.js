@@ -6,6 +6,8 @@ import Header from "./NavBar";
 import MeetTheTeam from "./Page_MeetTheTeam";
 import MainApp from "./Page_MainApp";
 import Help from "./Page_Help";
+import Home from "./Page_Home";
+import NotFound from "./Page_NotFound";
 
 const App = () => {
     return (
@@ -13,6 +15,9 @@ const App = () => {
             <Router>
                 <Header />
                 <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
                     <Route path="/meet-team">
                         <MeetTheTeam />
                     </Route>
@@ -21,6 +26,9 @@ const App = () => {
                     </Route>
                     <Route path="/about">
                         <Help />
+                    </Route>
+                    <Route>
+                        <NotFound />
                     </Route>
                 </Switch>
             </Router>

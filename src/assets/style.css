@@ -112,6 +112,10 @@ nav {
     ************* END NAVIGATOR CSS *************
 */
 
+/*
+    ************* BEGIN MEET THE TEAM CSS *************
+*/
+
 .id-card-row {
     display: flex;
     flex-direction: row;
@@ -150,6 +154,10 @@ nav {
     font-size: 1rem;
 }
 
+/*
+    ************* END MEET THE TEAM CSS *************
+*/
+
 .center-temp {
     margin: auto;
     text-align: center;
@@ -166,4 +174,17 @@ nav {
     justify-content: center;
     display: block;
     margin: 2rem auto;
+}
+
+.not-found {
+    text-align: center;
+    margin: 10rem 0 3rem 0;
+    font-size: 3rem;
+}
+
+.not-found-return {
+    text-align: center;
+    margin: 10rem auto 3rem auto;
+    font-size: 3rem;
+    width: 100%;
 }
