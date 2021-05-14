@@ -106,6 +106,7 @@ nav {
 
 .nav-links > * {
     margin: 0 3rem 0 0;
+    text-align: center;
 }
 
 /*
@@ -116,10 +117,16 @@ nav {
     ************* BEGIN MEET THE TEAM CSS *************
 */
 
+.meet-the-team > h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
 .id-card-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 2rem 6rem;
 }
 
 .id-card {
@@ -128,30 +135,44 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin: 4rem 1.5rem;
+    margin: 2rem 0rem;
 }
 
 .id-card > img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .id-card > h1 {
     font-weight: 300;
     margin: 1rem 1.1rem 0rem 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .id-card > h3 {
     margin: 0.45rem 0 0.45rem 0;
+    font-size: 2rem;
 }
 
 .id-card > p {
     text-align: center;
     font-weight: 300;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+.id-card-unfold {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .id-card-unfold {
+        flex-direction: column;
+    }
 }
 
 /*
@@ -187,4 +208,30 @@ nav {
     margin: 10rem auto 3rem auto;
     font-size: 3rem;
     width: 100%;
+}
+
+.home-divider {
+    display: flex;
+    justify-content: center;
+}
+
+.home-divider > * {
+    margin: 5rem 5rem 0 0;
+}
+
+.home-highlight {
+    color: #009fff;
+}
+
+.home-left {
+    width: 800px;
+    font-size: 2.5rem;
+}
+
+.home-left > h1 {
+    margin: 0;
+}
+
+.home-left > p {
+    font-size: 1.75rem;
 }
