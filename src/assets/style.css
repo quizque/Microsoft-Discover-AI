@@ -235,3 +235,16 @@ nav {
 .home-left > p {
     font-size: 1.75rem;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer > * {
+    margin: auto 25rem;
+    padding-bottom: 2rem;
+}
