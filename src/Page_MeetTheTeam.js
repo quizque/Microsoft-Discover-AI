@@ -1,4 +1,4 @@
-const MeetTeam = () => {
+const MeetTheTeam = () => {
     return (
         <div>
             <div className="id-card-row">
@@ -63,4 +63,4 @@ const MeetTeam = () => {
     );
 };
 
-export default MeetTeam;
+export default MeetTheTeam;

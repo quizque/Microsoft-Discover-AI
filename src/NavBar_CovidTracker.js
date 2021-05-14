@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const NavCovidTracker = () => {
+const NavBarCovidTracker = () => {
     const [vaccinesTracker, setVaccinesTracker] = useState(" loading...");
     const [vaccinesDifference, setvaccinesDifference] = useState("0");
     var formatter = new Intl.NumberFormat();
@@ -12,13 +12,7 @@ const NavCovidTracker = () => {
     async function requestVaccines() {
         const res = await fetch(
             // This is bad :(
-            "https://cors-anywhere.herokuapp.com/https://api.covid19tracker.ca/summary",
-            {
-                headers: {
-                    "Content-type": "application/json",
-                    orgin: "localhost:1234",
-                },
-            }
+            "https://blue-dew-0b3a.nickcoombe1.workers.dev/?https://api.covid19tracker.ca/summary"
         );
         const json = await res.json();
         setVaccinesTracker(
@@ -45,4 +39,4 @@ const NavCovidTracker = () => {
     );
 };
 
-export default NavCovidTracker;
+export default NavBarCovidTracker;

@@ -2,25 +2,25 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Header from "./Header";
-import MeetTeam from "./MeetTeam";
-import MainApp from "./MainApp";
-import Help from "./Help";
+import Header from "./NavBar";
+import MeetTheTeam from "./Page_MeetTheTeam";
+import MainApp from "./Page_MainApp";
+import Help from "./Page_Help";
 
 const App = () => {
     return (
         <div>
             <Router>
-                <Header></Header>
+                <Header />
                 <Switch>
                     <Route path="/meet-team">
-                        <MeetTeam></MeetTeam>
+                        <MeetTheTeam />
                     </Route>
                     <Route path="/app">
-                        <MainApp></MainApp>
+                        <MainApp />
                     </Route>
                     <Route path="/about">
-                        <Help></Help>
+                        <Help />
                     </Route>
                 </Switch>
             </Router>

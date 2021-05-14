@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import NavCovidTracker from "./NavCovidTracker";
+import NavBarCovidTracker from "./NavBar_CovidTracker";
 
 const Header = () => {
     return (
@@ -14,7 +14,7 @@ const Header = () => {
                     <h3>AI Therapist</h3>
                 </nav>
             </Link>
-            <NavCovidTracker></NavCovidTracker>
+            <NavBarCovidTracker />
             <nav className="nav-links">
                 <Link to="/app">App</Link>
                 <Link to="/about">Help</Link>
