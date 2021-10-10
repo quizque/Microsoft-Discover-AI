@@ -12,7 +12,7 @@ const NavBarCovidTracker = () => {
     async function requestVaccines() {
         const res = await fetch(
             // This is bad :(
-            "https://blue-dew-0b3a.nickcoombe1.workers.dev/?https://api.covid19tracker.ca/summary"
+            "{snipped}"
         );
         const json = await res.json();
         setVaccinesTracker(
